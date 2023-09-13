@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 header{
     position: sticky;
     background: #fff;
@@ -384,4 +388,66 @@ nav{
 .contact-form-button{
     max-width: 30%;
 }
+
+.footer-section{
+    background-color: black;
+}
+
+.footer-main-content p{
+    color: white;
+    margin-top: 1rem;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.5;
+}
+
+
+.footer-main-content h2,.social h2{
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.footer-main-content{
+    max-width: 50em;
+    width: 40%;
+}
+
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0rem;
+    border-bottom: 1px solid #fff;
+}
+
+.social-handles{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-handles a img{
+    width: 2rem;
+}
+
+.footer-container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.website-copyrights{
+    color: white;
+    text-align: center;
+    padding: 2rem 0rem;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.website-copyrights a{
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+}
+
 
