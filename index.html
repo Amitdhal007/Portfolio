@@ -10,6 +10,7 @@
         rel="stylesheet">
     <title>Dopefolio</title>
     <script src="https://kit.fontawesome.com/3b9e239c56.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -32,20 +33,20 @@
     </header>
 
     <div class="hero-section" id="home">
-        <div class="main-image">
-            <img src="./assets/png/profile-pics (5).png" alt="">
-        </div>
-        <div class="hero-section-content">
-            <div class="hero-name">
-                <h1>AMIT KUMAR</h1>
+            <div class="main-image">
+                <img src="./assets/png/profile-pics (5).png" alt="">
             </div>
-            <div class="hero-about">
-                <p>I'm a Software Devloper Based On Patiala, Punjab, India</p>
+            <div class="hero-section-content">
+                <div class="hero-name">
+                    <h1>AMIT KUMAR</h1>
+                </div>
+                <div class="hero-about">
+                    <p>I'm a Software Devloper Based On Patiala, Punjab, India</p>
+                </div>
+                <div class="hero-project-button">
+                    <a href="index.html#project">PROJECTS</a>
+                </div>
             </div>
-            <div class="hero-project-button">
-                <a href="index.html#project">PROJECTS</a>
-            </div>
-        </div>
     </div>
 
     <div id="about" class="about-section">
@@ -94,7 +95,7 @@
         <h2 id="project-title">PROJECTS</h2>
         <div class="project-text-line"></div>
         <p id="project-heading-desc">Explore a compilation of my completed and ongoing projects, offering a glimpse into
-            my portfolio and the websites I've crafted.t</p>
+            my portfolio and the websites I've crafted.</p>
 
         <div class="my-project">
             <div class="first-project">
@@ -132,23 +133,6 @@
                     <a href="https://temprature-converter-website.vercel.app/">Case Study</a>
                 </div>
             </div>
-
-            <!-- <div class="first-project">
-                <div class="project-img">
-                    <img src="./assets/jpeg/project-mockup-example.jpeg" alt="">
-                </div>
-
-                <div class="project-desc">
-                    <h3>Project 3</h3>
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora, explicabo quae
-                        quod deserunt eius sapiente praesentium.
-                    </p>
-
-                    <a href="">Case Study</a>
-                </div>
-            </div> -->
         </div>
     </div>
 
@@ -160,25 +144,28 @@
             Any Inquiry or Assistance.</p>
 
         <div class="contact-form">
-            <form action="">
-                <div class="contact-form-field">
+            <form id="form">
+                <div class="contact-form-field error success">
                     <label for="">Name</label>
-                    <input type="text" placeholder="Enter your Name">
+                    <input id="name" type="text" placeholder="Enter your Name" autocomplete="off">
+                    <small></small>
                 </div>
 
-                <div class="contact-form-field">
+                <div class="contact-form-field success error">
                     <label for="">Email</label>
-                    <input type="email" placeholder="Enter your Email">
+                    <input id="email" placeholder="Enter your Email" autocomplete="off">
+                    <small></small>
                 </div>
 
-                <div class="contact-form-field">
+                <div class="contact-form-field success error">
                     <label for="">Message</label>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message..."></textarea>
+                    <textarea id="message" name="" id="" cols="30" rows="10" placeholder="Enter your message..."></textarea>
+                    <small></small>
                 </div>
 
                 <div class="contact-form-button">
                     <!-- <div class="make-button-right">make it right</div> -->
-                    <button>SUBMIT</button>
+                    <button type="submit">SUBMIT</button>
                 </div>
 
             </form>
@@ -214,6 +201,9 @@
 
         </div>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./index.js"></script>
+    
 </body>
 
 </html>
