@@ -108,8 +108,8 @@ form.addEventListener("submit", function (event) {
 function sendEmail() {
     Email.send({
         Host: "smtp.elasticemail.com",
-        Username: "iknowmyself162@gmail.com",
-        Password: "amitasit@1999",
+        Username: "iknowmyself@gmail.com",
+        Password: "amitmeraNameha",
         To: 'hey.amit0162@gmail.com',
         From: document.getElementById("email").value,
         Subject: "Someone has sent a message",
